@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "sessions",
+  "info": {
+    "name": "Session"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "start_time": {
+      "type": "datetime"
+    },
+    "end_time": {
+      "type": "datetime"
+    },
+    "water_usage": {
+      "type": "biginteger"
+    },
+    "tap": {
+      "model": "tap",
+      "via": "sessions"
+    }
+  }
+}

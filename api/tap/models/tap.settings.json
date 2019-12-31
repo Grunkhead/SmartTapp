@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "taps",
+  "info": {
+    "name": "Tap"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "connected": {
+      "type": "boolean"
+    },
+    "sessions": {
+      "via": "tap",
+      "collection": "session"
+    }
+  }
+}
