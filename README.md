@@ -3,7 +3,7 @@
 
   - NodeJS 12 >
   - Yarn (package manager)
-  - MongoDB 4.*
+  - SQLite 3 >
 
 ## Installation
 
